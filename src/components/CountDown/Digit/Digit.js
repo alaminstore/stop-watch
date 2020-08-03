@@ -1,12 +1,6 @@
 import React from "react";
 import "./Digit.css";
 
-this.state = {
-  title: {
-    home: 0,
-    cols: 10,
-  },
-};
 
 const Digit = (props) => {
   return (
@@ -15,7 +9,7 @@ const Digit = (props) => {
       style={{ borderColor: props.color }}
     >
       <h1 className="display-3 py-4" style={{ color: props.color }}>
-        {props.value}
+        {props.value < 10 ? `0${props.value}` : props.value}
       </h1>
     </div>
   );
