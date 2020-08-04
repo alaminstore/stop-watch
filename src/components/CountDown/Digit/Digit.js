@@ -1,7 +1,6 @@
 import React from "react";
 import "./Digit.css";
 
-
 const Digit = (props) => {
   return (
     <div
